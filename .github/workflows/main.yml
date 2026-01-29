@@ -23,7 +23,7 @@ jobs:
 
       - name: Build exe
         run: |
-          pyinstaller --onefile main.py
+          pyinstaller --onefile Accounting_check.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
