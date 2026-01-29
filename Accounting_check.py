@@ -13,8 +13,8 @@ import re
 # In[23]:
 
 
-#path = 'C:\Users\13476\Desktop\'
-path = '/Users/clarazhou/Desktop/'
+path = 'C:\\Users\\13476\\Desktop\\'
+#path = '/Users/clarazhou/Desktop/'
 folder_path = path +'check file'
 xlsx_path = path +'check excel.xlsx'
 
@@ -151,7 +151,7 @@ print('Saved')
 
 df.to_excel(xlsx_path, index=False)
 
-
+input('Press Enter to exit...')
 # In[ ]:
 
 
