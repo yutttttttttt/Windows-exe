@@ -13,7 +13,7 @@ import re
 # In[183]:
 
 
-path = 'C:\Users\13476\Desktop\'
+path = 'C:\\Users\\13476\\Desktop\\'
 
 folder_path = path +'check file'
 xlsx = path +'check excel.xlsx'
