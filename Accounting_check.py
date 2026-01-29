@@ -27,6 +27,7 @@ def rename_ur(file_path, filename):
     os.rename(file_path, os.path.join(folder_path, new_name))
 
 df = pd.read_excel(xlsx_path)
+print('Reading Processing')
 # Amount
 df["Amount"] = (
     df["Amount"]
@@ -46,6 +47,8 @@ if 'Number_Flag' not in df.columns:
     df["Valid_Flag"] = False
 
 df["Trans Date"] = df["Trans Date"].astype(str).str.zfill(4)
+
+print('Date change')
 for filename in os.listdir(folder_path):
     if filename.startswith("OK-"):
         continue
@@ -137,6 +140,7 @@ for filename in os.listdir(folder_path):
         
 
 df.to_excel(xlsx_path, index=False)
+print('Saving')
 
 
 # In[ ]:
