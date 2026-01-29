@@ -140,8 +140,8 @@ for filename in os.listdir(folder_path):
         
 
 df.to_excel(xlsx_path, index=False)
-print('Saving')
-
+print('Saved')
+input("Press Enter to exit...")
 
 # In[ ]:
 
